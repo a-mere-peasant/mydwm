@@ -16,11 +16,11 @@ static const unsigned int gappov    = 3;       /* vert outer gap between windows
 static const int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 
 static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
+static char normbordercolor[]       = "#93eaba";
 static char normfgcolor[]           = "#bbbbbb";
 static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static char selbordercolor[]        = "#93eae6";
+static char selbgcolor[]            = "#93eae6";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
