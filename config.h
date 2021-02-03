@@ -6,8 +6,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Mononoki Nerd Font:size=10" };
-static const char dmenufont[]       = "Mononoki Nerd Font:size=10";
+static const char *fonts[]          = { "Source Code Pro:size=10" };
+static const char dmenufont[]       = "Source Code Pro:size=10";
 static const char col_gray1[]       = "#222222";
 static const unsigned int gappih    = 3;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 3;       /* vert inner gap between windows */
@@ -16,11 +16,11 @@ static const unsigned int gappov    = 3;       /* vert outer gap between windows
 static const int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 
 static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#93eaba";
+static char normbordercolor[]       = "#a1ed5f";
 static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#93eae6";
-static char selbgcolor[]            = "#93eae6";
+static char selfgcolor[]            = "#041e42";
+static char selbordercolor[]        = "#5fd5ed";
+static char selbgcolor[]            = "#afeadc";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -38,7 +38,7 @@ static const Rule rules[] = {
 
 	/* class     instance  title           tags mask  iscentered  isfloating  noswallow  monitor */
 	{ "Gimp",    NULL,     NULL,           0,         1,          1,           0,        -1 },
-	{ "Firefox", NULL,     NULL,           1 << 8,    1,          0,          -1,        -1 },
+	{ "Firefox", NULL,     NULL,           0,	  1,          0,          -1,        -1 },
 	{ "Termite", NULL,     NULL,           0,         1,          0,           0,        -1 },
 };
 
@@ -68,7 +68,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "termite", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 #include "push.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */

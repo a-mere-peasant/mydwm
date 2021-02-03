@@ -6,8 +6,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Mononoki Nerd Font:size=10" };
-static const char dmenufont[]       = "Mononoki Nerd Font:size=10";
+static const char *fonts[]          = { "Source Code Pro:size=10" };
+static const char dmenufont[]       = "Source Code Pro:size=10";
 static const char col_gray1[]       = "#222222";
 static const unsigned int gappih    = 3;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 3;       /* vert inner gap between windows */
@@ -68,7 +68,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "termite", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 #include "push.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
